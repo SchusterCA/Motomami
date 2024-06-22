@@ -237,9 +237,10 @@ figure img {
     text-align: center;
     color: white;
     font-size: 1.2rem;
-    margin-top: 40px;
+    margin-top: 10rem;
     padding-left: 30rem;
     padding-right: 30rem;
+    margin-bottom: 10rem;
 }
 /** FOOTER **/
 
