@@ -123,6 +123,22 @@ div h1 {
     font-size: 4rem;
 }
 
+h2 {
+    color: white;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.5rem;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    margin-top: 100px;
+}
+
+
 .menu-navegable {
     position: -webkit-sticky;
     position: sticky;
@@ -164,6 +180,7 @@ figure {
     text-align: center;
     color: white;
     font-size: 1.5rem;
+    margin-top: 40px;
 }
 
 .neon-container {
@@ -189,4 +206,103 @@ figcaption {
 figure img {
         width: 100%;
         border-radius: 10px;
+}
+
+
+/** FOOTER **/
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+    backdrop-filter: blur(45px);
+    box-shadow: 0px -5px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #ffffff31;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.footer-left {
+	background-image: url('/img/logo.png');
+	height: 120px;
+    width: 134px;
+    display: flex;
+    background-size: contain;
+	background-repeat: no-repeat;
+    text-indent: -99999px;
+    margin-right: 100px;
+}
+
+.footer-center a:hover {
+    color: rgb(255, 32, 32);
+}
+
+.footer-center ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	display: flex;
+}
+
+.footer-center ul li {
+	margin-right: 45px;
+    text-align: center;
+}
+
+.footer-center ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.redes li {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer-right a {
+	margin-left: 10px;
+}
+
+.InstagramF {
+	background-image: url('/img/logotipo-de-instagram.png');
+	height: 30px;
+    width: 30px;
+    display: flex;
+    background-size: contain;
+	background-repeat: no-repeat;
+    text-indent: -9999999px;
+}
+
+.FacebookF {
+	background-image: url('/img/facebook.png');
+	height: 30px;
+    width: 30px;
+    display: flex;
+    background-size: contain;
+	background-repeat: no-repeat;
+    text-indent: -9999999px;
+}
+
+.TwitterF {
+	background-image: url('/img/gorjeo.png');
+	height: 30px;
+    width: 30px;
+    display: flex;
+    background-size: contain;
+	background-repeat: no-repeat;
+    text-indent: -9999999px;
+}
+
+.TelegramF {
+	background-image: url('/img/telegrama.png');
+	height: 30px;
+    width: 30px;
+    display: flex;
+    background-size: contain;
+	background-repeat: no-repeat;
+    text-indent: -9999999px;
 }
