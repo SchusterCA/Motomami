@@ -219,6 +219,28 @@ figure img {
 
 }
 
+.ul-inicio {
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: justify;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    padding-left: 30rem;
+    padding-right: 30rem;
+    /**mejorar espaciado entre li*/
+}
+
+.derechos {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    padding-left: 30rem;
+    padding-right: 30rem;
+}
 /** FOOTER **/
 
 .footer {
@@ -246,7 +268,7 @@ figure img {
 }
 
 .footer-center a:hover {
-    color: rgb(255, 32, 32);
+    color: rgb(255, 251, 0);
 }
 
 .footer-center ul {
