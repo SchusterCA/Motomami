@@ -1,10 +1,20 @@
+body {
+    background: rgb(127,0,18);
+    background: linear-gradient(0deg, rgba(127,0,18,1) 9%, rgba(14,4,2,1) 58%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 
-.principal{
+
+.principal {
     min-width: 240px;
     max-width: 1920px;
     width: 100%;
     margin: auto;
 }
+
 
 main, footer {
     display: block;
@@ -112,6 +122,9 @@ aside {
 body {
     background: rgb(127,0,18);
     background: linear-gradient(0deg, rgba(127,0,18,1) 9%, rgba(14,4,2,1) 58%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
 }
 
@@ -170,7 +183,11 @@ h3 {
 
 .menu-navegable a {
     text-decoration: none;
-    color: #333;
+    color: white;
+}
+
+.menu-navegable a:hover {
+    color: rgb(255, 255, 0);
 }
 
 figure {
@@ -214,8 +231,8 @@ figure img {
     color: white;
     font-size: 1.5rem;
     margin-top: 40px;
-    padding-left: 30rem;
-    padding-right: 30rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
 
 }
 
@@ -225,9 +242,8 @@ figure img {
     color: white;
     font-size: 1.5rem;
     margin-top: 40px;
-    padding-left: 30rem;
-    padding-right: 30rem;
-    /**mejorar espaciado entre li*/
+    padding-left: 15rem;
+    padding-right: 15rem;
 }
 
 .derechos {
@@ -237,18 +253,38 @@ figure img {
     text-align: center;
     color: white;
     font-size: 1.2rem;
-    margin-top: 10rem;
-    padding-left: 30rem;
-    padding-right: 30rem;
-    margin-bottom: 10rem;
 }
+
+.container {
+    width: 70%;
+    height: 350px;
+    gap: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    animation: neon 1.5s infinite alternate;
+    transition: all ease-in-out 0.5s;
+}
+
+.container img:hover {
+    width: 50%;
+}
+
 /** FOOTER **/
 
 .footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
     backdrop-filter: blur(45px);
     box-shadow: 0px -5px 4px 0px rgba(0, 0, 0, 0.25);
     font-family: "Bebas Neue", sans-serif;
@@ -258,12 +294,12 @@ figure img {
 }
 
 .footer-left {
-	background-image: url('/img/logo.png');
-	height: 120px;
+    background-image: url('/img/logo.png');
+    height: 120px;
     width: 134px;
     display: flex;
     background-size: contain;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     text-indent: -99999px;
     margin-right: 100px;
 }
@@ -273,69 +309,70 @@ figure img {
 }
 
 .footer-center ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
 }
 
 .footer-center ul li {
-	margin-right: 45px;
+    margin-right: 45px;
     text-align: center;
 }
 
 .footer-center ul li a {
-	text-decoration: none;
-	color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 .redes li {
-	display: inline-block;
-	text-decoration: none;
-	color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
 }
 
 .footer-right a {
-	margin-left: 10px;
+    margin-left: 10px;
 }
 
+
 .InstagramF {
-	background-image: url('/img/logotipo-de-instagram.png');
-	height: 30px;
+    background-image: url('/img/logotipo-de-instagram.png');
+    height: 30px;
     width: 30px;
     display: flex;
     background-size: contain;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     text-indent: -9999999px;
 }
 
 .FacebookF {
-	background-image: url('/img/facebook.png');
-	height: 30px;
+    background-image: url('/img/facebook.png');
+    height: 30px;
     width: 30px;
     display: flex;
     background-size: contain;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     text-indent: -9999999px;
 }
 
 .TwitterF {
-	background-image: url('/img/gorjeo.png');
-	height: 30px;
+    background-image: url('/img/gorjeo.png');
+    height: 30px;
     width: 30px;
     display: flex;
     background-size: contain;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     text-indent: -9999999px;
 }
 
 .TelegramF {
-	background-image: url('/img/telegrama.png');
-	height: 30px;
+    background-image: url('/img/telegrama.png');
+    height: 30px;
     width: 30px;
     display: flex;
     background-size: contain;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     text-indent: -9999999px;
 }
