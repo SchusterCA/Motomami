@@ -43,8 +43,8 @@ aside {
 
 .logo-link {
     display: inline-block;
-    width: 140px; 
-    height: 140px;
+    width: 600px; 
+    height: 180px;
     background-image: url('/img/logo.png');
     background-size: contain; 
     background-repeat: no-repeat;
