@@ -267,6 +267,11 @@ figure img {
 	margin-top: 80px;
 	padding-left: 15rem;
 	padding-right: 15rem;
+	@media (max-width: 768px) {
+		max-width: 100%;
+		padding: 0;
+		text-align: center;
+	}
 }
 
 .ul-inicio {
@@ -277,6 +282,10 @@ figure img {
 	margin-top: 80px;
 	padding-left: 15rem;
 	padding-right: 15rem;
+	@media (max-width: 768px) {
+		padding: 0 15px 0 35px;
+		max-width: 100%;
+	}
 }
 
 .derechos {
