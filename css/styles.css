@@ -1,9 +1,22 @@
-/*Contenido Header*/
-
-/* Estilos generales */
+main, nav, header, footer {
+	display: block;
+}
 
 body {
-	background-color: rgba(0, 0, 0, 0.25);
+	background-image: url(/img/fondo_2.webp);
+}
+
+main {
+	background: rgb(127, 0, 18);
+	background: linear-gradient(
+		0deg,
+		rgba(127, 0, 18, 1) 9%,
+		rgba(14, 4, 2, 1) 58%
+		);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0rem 5rem 0rem 5rem;
 }
 
 #logo-header, #logo-link {
@@ -12,7 +25,7 @@ body {
 	background-position: center;
 	text-indent: -9999999rem;
 	padding: 1.3rem 0;
-	background-color: black;
+	background-color: rgba(14, 4, 2, 1);
 }
 
 ul, ol {
@@ -92,7 +105,7 @@ ul, ol {
 /*Contenido Main*/
 
 h1, h2, h3, h4, h5 {
-	color: black;
+	color: aliceblue;
 	text-align: center;
 	font-family: "Bebas Neue", sans-serif;
 }
@@ -119,7 +132,28 @@ h5 {
 
 p {
 	font-family: "Barlow Condensed", sans-serif;
-	color: black;
+	font-size: 1.2rem;
+	color: aliceblue;
 	text-indent: 1rem;
+	text-align: left;
+	margin: 2rem;
+	
 }
+
+p strong {
+	color: rgb(255, 237, 132);
+}
+
+.hero {
+	background-image: url("../img/banner.png");
+	background-size: cover;
+	background-position: center;
+	height: 48rem;
+}
+
+.heroplace {
+	text-indent: -9999999px;
+	margin: auto;
+}
+
 
