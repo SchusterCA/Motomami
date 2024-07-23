@@ -28,7 +28,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	text-indent: -9999999rem;
-	padding: 1.3rem 0;
+	padding: 3rem 0;
 	background-color: rgba(14, 4, 2, 1);
 }
 
@@ -135,10 +135,21 @@ p {
 	font-family: "Barlow Condensed", sans-serif;
 	font-size: 1.2rem;
 	color: aliceblue;
+	
+}
+
+.P-inicio {
 	text-indent: 1rem;
 	text-align: left;
-	margin: 2rem;
-	
+	margin: 3rem;
+}
+
+.derechos {
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+	font-size: 1rem;
 }
 
 p strong {
@@ -192,3 +203,208 @@ figure img {
 	width: 100%;
 	border-radius: 10px;
 }
+
+.albumes-info {
+	color: white;
+	margin: auto;
+	padding: 0 15px;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5rem;
+	list-style: none;
+	text-align: justify;
+	margin-top: 80px;
+}
+
+.container-album,
+.EP-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.albumes-lista,
+.EP-lista {
+	color: white;
+	margin-top: 80px;
+	padding: 0 15px;
+	font-family: "Barlow Condensed", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5rem;
+	list-style: none;
+	text-align: justify;
+}
+
+.gif {
+	margin: auto;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+	animation: neon 1.5s infinite alternate;
+	margin-top: 80px;
+}
+
+.epigrafe_gif {
+	font-family: "Barlow Condensed", sans-serif;
+	font-style: italic;
+	font-weight: 100;
+	text-align: center;
+	color: white;
+	font-size: 1.5rem;
+	margin-top: 25px;
+}
+
+.video-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+/** FOOTER **/
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	backdrop-filter: blur(45px);
+	box-shadow: 0px -5px 4px 0px rgba(0, 0, 0, 0.25);
+	font-family: "Bebas Neue", sans-serif;
+	background-color: #ffffff31;
+	padding: 20px;
+	font-size: 2rem;
+}
+
+.footer-left {
+	background-image: url("/img/logo-footer.png");
+	height: 120px;
+	width: 134px;
+	display: flex;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-indent: -99999px;
+	margin-right: 100px;
+}
+
+.footer-center a:hover {
+	color: rgb(255, 251, 0);
+}
+
+.footer-center ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	display: flex;
+}
+
+.footer-center ul li {
+	margin-right: 45px;
+	text-align: center;
+}
+
+.footer-center ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.redes li {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer-right a {
+	margin-left: 10px;
+}
+
+.InstagramF, .FacebookF, .TwitterF, .TelegramF {
+	height: 30px;
+	width: 30px;
+	display: flex;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-indent: -9999999px;
+
+}
+
+.InstagramF {
+	background-image: url("/img/logotipo-de-instagram.png");
+
+}
+
+.FacebookF {
+	background-image: url("/img/facebook.png");
+}
+
+.TwitterF {
+	background-image: url("/img/gorjeo.png");
+
+}
+
+.TelegramF {
+	background-image: url("/img/telegrama.png");
+
+}
+
+/* FORMULARIO */
+
+.form-container {
+	background-color: #ae715e;
+	padding: 20px;
+	border-radius: 10px;
+	max-width: 600px;
+	margin: 50px auto;
+}
+
+.form-container form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.form-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+}
+
+.form-container form label {
+	color: #fff;
+	font-family: "Barlow Condensed", sans-serif;
+	font-size: 1.2rem;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="email"],
+.form-container form input[type="tel"],
+.form-container form select,
+.form-container form input[type="file"] {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.form-container form button {
+	background-color: transparent;
+	color: #fff;
+	padding: 15px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.form-container form button:hover {
+	background-color: #fff;
+	color: rgb(255, 251, 0);
+}
+
