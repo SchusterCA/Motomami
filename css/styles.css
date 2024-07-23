@@ -37,11 +37,12 @@ p, a {
 	text-indent: 1rem;
 }
 
-#logo-header {
+#logo-header, #logo-link {
 	background-image: url(/img/logo-header.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	text-indent: -9999999rem;
-	padding: 10px 0;
+	padding: 1.3rem 0;
+	background-color: black;
 }
 
