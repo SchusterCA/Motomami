@@ -211,28 +211,24 @@ figure img {
 	font-family: "Barlow Condensed", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	list-style: none;
 	text-align: justify;
-	margin-top: 80px;
 }
 
-.container-album,
-.EP-container {
+.container-album, .EP-container {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 }
 
-.albumes-lista,
-.EP-lista {
+.albumes-lista, .EP-lista {
 	color: white;
-	margin-top: 80px;
 	padding: 0 15px;
 	font-family: "Barlow Condensed", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	list-style: none;
 	text-align: justify;
 }
@@ -243,23 +239,16 @@ figure img {
 	border-radius: 10px;
 	box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 	animation: neon 1.5s infinite alternate;
-	margin-top: 80px;
-}
-
-.epigrafe_gif {
-	font-family: "Barlow Condensed", sans-serif;
-	font-style: italic;
-	font-weight: 100;
-	text-align: center;
-	color: white;
-	font-size: 1.5rem;
-	margin-top: 25px;
 }
 
 .video-container {
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
+}
+
+.albumes-lista {
+	list-style:lower-roman;
 }
 
 /** FOOTER **/
