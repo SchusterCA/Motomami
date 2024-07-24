@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -59,6 +59,7 @@
                     <p class="P-inicio">Lorem ipsum dolor sit amet consectetur adipiscing elit mauris, sed condimentum placerat dui ad aliquet penatibus, consequat pulvinar maecenas et ultrices cras urna.</p>
                 </div>
             </section>
+
             <div id="form-container">
                 <form action="gracias.html" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
@@ -69,13 +70,25 @@
                         <span>Apellido</span>
                         <input placeholder="Ingrese su Apellido" type="text" name="apellido" id="apellido" required>
                     </div>
+
+                    <div class="form-group">
+                        <span>DNI</span>
+                        <input placeholder="Ingrese su DNI sin puntos ni espacios" type="text" name="documento" id="documento" pattern="\d*" maxlength="8" required>
+                    </div>
+
+                    <div class="form-group">
+                        <span>Fecha de Nacimiento</span>
+                        <input  type="date" name="fecha nacimiento" id="fecha-nacimiento" required>
+                    </div>
+
+
                     <div class="form-group">
                         <span>E-mail</span>
                         <input placeholder="alguien@example.com" type="email" name="email" id="mail" required>
                     </div>
                     <div class="form-group">
                         <span>Teléfono</span>
-                        <input placeholder="Ingrese su numero de teléfono" type="number" name="telefono" id="tel" required>
+                        <input placeholder="Ingrese su numero de teléfono" type="tel" name="telefono" id="tel" maxlength="15" required>
                     </div>
                     <div class="form-group">
                         <span>Provincia</span>
@@ -109,6 +122,11 @@
                     </div>
                 </form>
             </div>
+
+            <div>
+                <p class="derechos">Todo este contenido fue creado para la materia “Maquetado y Desarrollo Web” a cargo de la profesora Mabel García en el año 2024 por Candela Schuster y Diego Asensio para la entrega del T.P. N°2.</p>
+            </div>>
+
         </main>
         <footer class="footer">
             <div>
