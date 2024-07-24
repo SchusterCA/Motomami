@@ -61,6 +61,19 @@ ul, ol {
     margin: 0;
 }
 
+.burger-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  :target::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin-top: -80px;
+  }
+
 .nav > li {
     position: relative;
 }
@@ -513,6 +526,11 @@ figcaption {
         height: 20rem;
     }
 
+    .derechos {
+        margin: 3rem;
+      }
+
+
     .neon-container {
 
         width: 800px;
@@ -577,6 +595,15 @@ figcaption {
         border: none;
     }
 
+    #navbar {
+        font-size: 1.2em;
+    }
+
+    .nav li ul {
+        min-width: 8rem;
+    }
+    
+
     .hero {
         background-image: url("../img/banner_chico.webp");
         background-size: cover;
@@ -584,6 +611,12 @@ figcaption {
         height: 15rem;
         margin: auto;
     }
+
+    .galeria {
+        display: none;
+    }
+
+    
 
     .neon-container {
 
@@ -610,6 +643,11 @@ figcaption {
         font-size: 1rem;
       }
 
+
+      .derechos {
+        margin: 3rem;
+      }
+
     .footer {
         display: flex;
         justify-content: space-between;
@@ -619,7 +657,7 @@ figcaption {
         font-family: "Bebas Neue", sans-serif;
         background-color: #ffffff31;
         padding: 15px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     .footer-left {
