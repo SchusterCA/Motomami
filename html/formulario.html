@@ -70,30 +70,65 @@
                 </section>
                 
                 <div class="form-container">
-
-                    <form action="gracias.html" method="post" enctype="multipart/form-data">
-
-
-                        <span>Fecha:</span>
-                            <input type="date" name="fecha" min="2024-04-12" max="2024-05-29" >
-
-                        <span>Email:</span>
-                            <input type="email" name="mail" autocomplete="off">
-
-                        <span>Teléfono:</span>
-                            <input type="tel" name="telefono" value="011-555-5555" placeholder="telefono" >
-
-                        <span>Nombre:</span>
-                            <input type="text" name="nombre" value="Marcos" required  >
-
-                        <span>Apellido: </span>
-                            <input type="text" name="apellido" value="Perez" required >
-
-                        <span>Adjuntar:</span>
-                            <input type="file" name="archivo" accept="image/jpeg, image/png" >
+                    <form action="gracias.html" method="POST" enctype="multipart/form-data">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                            </div>
+                        </div>
+        
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
                         
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="provincia">Provincia</label>
+                                <input type="text" id="provincia" name="provincia" required>
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="localidad">Localidad</label>
+                                <input type="text" id="localidad" name="localidad" required>
+                            </div>
+    
+                        </div>
+    
+                        <label>Pregunta: ¿Con cuál artista colaboró Rosalía en una canción?</label>
+    
+                        <div>
+                            <input type="checkbox" id="maluma" name="colaboracion" value="Maluma">
+                            <label for="maluma">Maluma</label>
                             
-                        <input type="submit" value="Enviar" id="envio" >
+                            <input type="checkbox" id="billie" name="colaboracion" value="Billie Eilish">
+                            <label for="billie">Billie Eilish</label>
+                            
+                            <input type="checkbox" id="rauw" name="colaboracion" value="Rauw Alejandro">
+                            <label for="rauw">Rauw Alejandro</label>
+                            
+                            <input type="checkbox" id="weekend" name="colaboracion" value="The Weeknd">
+                            <label for="weekend">The Weeknd</label>
+                            
+                            <input type="checkbox" id="jbalvin" name="colaboracion" value="J Balvin">
+                            <label for="jbalvin">J Balvin</label>
+                            
+                            <input type="checkbox" id="karol" name="colaboracion" value="Karol G">
+                            <label for="karol">Karol G</label>
+                        </div>
+                        
+                        <label for="foto">Por último: subí tu foto favorita de la Motomami</label>
+                        
+                        <input type="file" id="foto" name="foto" required>
+                        
+                        <button href="html/gracias.html" type="submit">Enviar</button>
+                        
                     </form>
 
                   </div>
