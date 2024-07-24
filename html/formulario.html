@@ -3,14 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Formulario - Motomami Fanpage</title>
-        <script src="scripts/prefixfree.min.js"></script>
     </head>
 
     <body>
@@ -69,66 +68,78 @@
                     </div>
                 </section>
                 
-                <div class="form-container">
-                    <form action="gracias.html" method="POST" enctype="multipart/form-data">
+                <div id="form-container">
+
+                    <form action="gracias.html" method="post" enctype="multipart/form-data">
+
                         <div class="form-row">
+
                             <div class="form-group">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" id="nombre" name="nombre" required>
+                                <span>Nombre</span>
+                                <input placeholder="Ingrese su nombre" type="text"  name="nombre" id="nombre" required>
                             </div>
+
                             <div class="form-group">
-                                <label for="apellido">Apellido</label>
-                                <input type="text" id="apellido" name="apellido" required>
+                                <span>Apellido</span>
+                                <input placeholder="Ingrese su Apellido" type="text"  name="apellido" id="apellido" required>
                             </div>
                         </div>
         
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
+                        <span>E-mail</span>
+                        <input placeholder="alguien@example.com" type="email"  name="email" id="mail" required />
                         
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" required>
+                        <span>Teléfono</span>
+                        <input placeholder="Ingrese su numero de teléfono" type="tel"  name="telefono" id="tel" required />
                         
                         <div class="form-row">
+
                             <div class="form-group">
-                                <label for="provincia">Provincia</label>
-                                <input type="text" id="provincia" name="provincia" required>
+                                <lspan >Provincia</span>
+                                <input placeholder="Ingrese la Provincia" type="text"  name="provincia" id="provincia" required />
                             </div>
     
                             <div class="form-group">
-                                <label for="localidad">Localidad</label>
-                                <input type="text" id="localidad" name="localidad" required>
+                                <span>Localidad</span>
+                                <input placeholder="Ingrese la Localidad" type="text"  name="localidad" id="localidad" required />
                             </div>
     
                         </div>
     
-                        <label>Pregunta: ¿Con cuál artista colaboró Rosalía en una canción?</label>
+                        <span>Pregunta: ¿Con cuál artista colaboró Rosalía en una canción?</span>
     
                         <div>
-                            <input type="checkbox" id="maluma" name="colaboracion" value="Maluma">
-                            <label for="maluma">Maluma</label>
+                            <label for="artista1">Maluma</label>
+                            <input type="checkbox"  name="artista1" id="artista1" />
                             
-                            <input type="checkbox" id="billie" name="colaboracion" value="Billie Eilish">
-                            <label for="billie">Billie Eilish</label>
+                            <label for="artista2">Billie Eilish</label>
+                            <input type="checkbox"  name="artista2" id="artista2" />
                             
-                            <input type="checkbox" id="rauw" name="colaboracion" value="Rauw Alejandro">
-                            <label for="rauw">Rauw Alejandro</label>
+                            <label for="artista3">Rauw Alejandro</label>
+                            <input type="checkbox"  name="artista3" id="artista3" />
                             
-                            <input type="checkbox" id="weekend" name="colaboracion" value="The Weeknd">
-                            <label for="weekend">The Weeknd</label>
+                            <label for="artista4">The Weeknd</label>
+                            <input type="checkbox"  name="artista4" id="artista4" />
                             
-                            <input type="checkbox" id="jbalvin" name="colaboracion" value="J Balvin">
-                            <label for="jbalvin">J Balvin</label>
+                            <label for="artista5">J Balvin</label>
+                            <input type="checkbox"  name="artista5" id="artista5" />
                             
-                            <input type="checkbox" id="karol" name="colaboracion" value="Karol G">
-                            <label for="karol">Karol G</label>
+                            <label for="artista6">Karol G</label>
+                            <input type="checkbox" name="artista6" id="artista6" />
+                            
                         </div>
                         
-                        <label for="foto">Por último: subí tu foto favorita de la Motomami</label>
+                        <div class="form-group">
+                            <span>Por último: subí tu foto favorita de la Motomami</span>
+
+                            <input type="file"  name="foto" id="foto" accept="image/*" required>
+
+                        </div>
                         
-                        <input type="file" id="foto" name="foto" required>
-                        
-                        <button href="html/gracias.html" type="submit">Enviar</button>
-                        
+                        <div class="form-group">
+                            <input  type="submit" id="button" value="Enviar" />
+                        </div>
+                       
+
                     </form>
 
                   </div>
