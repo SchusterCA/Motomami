@@ -58,11 +58,9 @@
         
             <main>
         
-                <section>
                     <div class="hero">
                         <p class="heroplace">banner</p>
                     </div>
-                </section>
         
                 <section>
                     <div>
@@ -71,36 +69,42 @@
                     </div>
                 </section>
                 
-                <section>
+                
                     <div class="form-container">
+
                         <form action="submit_form.php" method="post" enctype="multipart/form-data">
+
                             <div class="form-row">
+
                                 <div class="form-group">
+
                                     <label for="nombre">Nombre</label>
-                                    <input type="text" id="nombre" name="nombre" required>
+                                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
                                 </div>
                                 <div class="form-group">
                                     <label for="apellido">Apellido</label>
-                                    <input type="text" id="apellido" name="apellido" required>
+                                    <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
                                 </div>
                             </div>
             
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required placeholder="alguien@example.com">
                             
                             <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono" required>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Ejemplo: + 54 112323">
                             
                             <div class="form-row">
+
                                 <div class="form-group">
                                     <label for="provincia">Provincia</label>
-                                    <input type="text" id="provincia" name="provincia" required>
+                                    <input type="text" id="provincia" onkeyup="filterProvincias()" list="provinciasList" required>
+                                    <datalist id="provinciasList"></datalist>
                                 </div>
-        
-                                <div class="form-group">
-                                    <label for="localidad">Localidad</label>
-                                    <input type="text" id="localidad" name="localidad" required>
-                                </div>
+
+                                  <div class="form-group">
+                                    <label for="localidad">Localidades:</label>
+                                    <select id="localidad" required></select>
+                                  </div>
         
                             </div>
         
@@ -128,18 +132,15 @@
                             
                             <label for="foto">Por último: subí tu foto favorita de la Motomami</label>
                             
-                            <input type="file" id="foto" name="foto" required>
+                            <input class="subir" type="file" id="foto" name="foto" required>
                             
                             <button href="html/gracias.html" type="submit">Enviar</button>
                         </form>
                     </div>
-                </section>
                 
-                <section>
                     <div class="derechos">
                         <p>Todo este contenido fue creado para la materia “Maquetado y Desarrollo Web” a cargo de la profesora Mabel García en el año 2024 por Candela Schuster y Diego Asensio para la entrega del T.P. N°2.</p>
                     </div>
-                </section>
         
             </main>
         
@@ -167,6 +168,8 @@
             </footer>
         
         </div>
+
+          <script src="../script.js"></script>
 
     </body>
 

@@ -312,6 +312,76 @@ figcaption {
     list-style: lower-roman;
 }
 
+
+/* FORMULARIO */
+
+.form-container {
+    background-color: #ae715e;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.form-container form label {
+    color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.2rem;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="email"],
+.form-container form input[type="tel"],
+.form-container form select,
+.form-container form input[type="file"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-container form button {
+
+    font-family: "Barlow Condensed", sans-serif;
+    background-color: transparent;
+    color: #fff;
+    margin: 0 150px 0 150px;
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.form-container form button:hover {
+
+    background-color:rgb(37, 11, 6);
+    color: gold;
+}
+
+.subir {
+    color: aliceblue;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.5rem;
+}
+
 /** FOOTER **/
 
 .footer {
@@ -395,64 +465,6 @@ figcaption {
     background-image: url("/img/telegrama.webp");
 }
 
-/* FORMULARIO */
-
-.form-container {
-    background-color: #ae715e;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 50px auto;
-}
-
-.form-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.form-row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-}
-
-.form-container form label {
-    color: #fff;
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 1.2rem;
-}
-
-.form-container form input[type="text"],
-.form-container form input[type="email"],
-.form-container form input[type="tel"],
-.form-container form select,
-.form-container form input[type="file"] {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.form-container form button {
-    background-color: transparent;
-    color: #fff;
-    padding: 15px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.form-container form button:hover {
-    background-color: #fff;
-    color: rgb(255, 251, 0);
-}
 
 /*mediaquerys para resoluciones*/
 
@@ -563,8 +575,6 @@ figcaption {
         border: none;
     }
 
-
-
     .hero {
         background-image: url("../img/banner_chico.webp");
         background-size: cover;
@@ -577,8 +587,7 @@ figcaption {
 
         width: 480px;
     }
-
-
+    
     .form-container {
         background-color: #ae715e;
         padding: 15px;
