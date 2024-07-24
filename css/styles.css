@@ -108,6 +108,10 @@ ul, ol {
     display: block;
 }
 
+.burger {
+    display: none;
+}
+
 h1, h2, h3, h4, h5 {
     color: aliceblue;
     text-align: center;
@@ -508,4 +512,166 @@ figcaption {
         margin-right: 50px;
     }
 
+}
+
+@media screen and (max-width:480px) {
+
+    #logo-header, #logo-link {
+     
+        background-image: url(/img/logo-header_chico.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-indent: -9999999rem;
+        padding: 1.5rem 0;
+        background-color: rgba(14, 4, 2, 1);
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+    }
+    
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    body{
+        background:none;
+        margin:0;
+    }
+    
+    .principal{
+        width:480px;
+        margin:auto;
+        background: rgb(127, 0, 18);
+        background: linear-gradient(
+            0deg,
+            rgba(127, 0, 18, 1) 9%,
+            rgba(14, 4, 2, 1) 58%
+        );
+        border: none;
+    }
+
+
+
+    .hero {
+        background-image: url("../img/banner_chico.webp");
+        background-size: cover;
+        background-position: center;
+        height: 15rem;
+        margin: auto;
+    }
+
+    .neon-container {
+
+        width: 480px;
+    }
+
+
+    .form-container {
+        background-color: #ae715e;
+        padding: 15px;
+        width: 340px;
+        margin: auto;
+    }
+    
+    .form-container form label {
+        font-size: 1rem;
+    }
+    
+    .form-container form button {
+        font-size: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        backdrop-filter: blur(45px);
+        box-shadow: 0px -5px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: "Bebas Neue", sans-serif;
+        background-color: #ffffff31;
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+    
+    .footer-left {
+        background-image: url("/img/logo-footer.webp");
+        height: 120px;
+        width: 120px;
+        display: flex;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-indent: -99999px;
+        margin-right: 50px;
+    }
+    
+    .footer-center a:hover {
+        color: rgb(255, 251, 0);
+    }
+    
+    .footer-center ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: block;
+    }
+    
+    .footer-center ul li {
+        margin-right: 35px;
+        text-align: left;
+    }
+    
+    .footer-center ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .redes li {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .footer-right a {
+        margin-left: 5px;
+    }
+    
+    .InstagramF, .FacebookF, .TwitterF, .TelegramF {
+        height: 20px;
+        width: 20px;
+        display: flex;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-indent: -9999999px;
+    }
+    
+    .InstagramF {
+        background-image: url("/img/ig.webp");
+    }
+    
+    .FacebookF {
+        background-image: url("/img/fb.webp");
+    }
+    
+    .TwitterF {
+        background-image: url("/img/tw.webp");
+    }
+    
+    .TelegramF {
+        background-image: url("/img/telegram.webp");
+    }
+    
 }
