@@ -63,7 +63,7 @@
             </section>
 
             <div id="form-container">
-                <form action="gracias.html" method="POST" enctype="multipart/form-data">
+                <form action="gracias.html" method="GET" enctype="multipart/form-data">
                     <div class="form-group">
                         <span>Nombre</span>
                         <input placeholder="Ingrese su nombre" type="text" name="nombre" id="nombre" required>
@@ -80,7 +80,7 @@
 
                     <div class="form-group">
                         <span>Fecha de Nacimiento</span>
-                        <input  type="date" name="fecha nacimiento" id="fecha-nacimiento" required>
+                        <input type="date" name="fecha_nacimiento" id="fecha-nacimiento" required>
                     </div>
 
 
@@ -94,11 +94,25 @@
                     </div>
                     <div class="form-group">
                         <span>Provincia</span>
-                        <input placeholder="Ingrese la Provincia" type="text" name="provincia" id="provincia" required>
+                        <select name="provincia" id="provincia" required>
+                            <option value="" disabled selected>Seleccione su provincia</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Tucumán">Tucumán</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <span>Localidad</span>
-                        <input placeholder="Ingrese la Localidad" type="text" name="localidad" id="localidad" required>
+                        <select name="localidad" id="localidad" required>
+                            <option value="" disabled selected>Seleccione su localidad</option>
+                            <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+                            <option value="Rosario">Rosario</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="San Miguel de Tucumán">San Miguel de Tucumán</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <span>Pregunta: ¿Con cuál artista colaboró Rosalía en una canción?</span>
@@ -144,13 +158,12 @@
             <div class="footer-right">
                 <ul class="redes">
                     <li><a href="#" class="InstagramF">Instagram</a></li>
-                    <li><a href="#" class="FacebookF">Facebook</a></li>
                     <li><a href="#" class="TwitterF">Twitter</a></li>
-                    <li><a href="#" class="TelegramF">Telegram</a></li>
+                    <li><a href="#" class="FacebookF">Facebook</a></li>
+                    <li><a href="#" class="YoutubeF">YouTube</a></li>
                 </ul>
             </div>
         </footer>
     </div>
 </body>
 </html>
-
