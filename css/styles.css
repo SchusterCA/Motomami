@@ -50,6 +50,10 @@ ul, ol {
     font-size: 2rem;
 }
 
+.selected {
+    color: rgb(224, 61, 61) !important;
+}
+
 :target::before {
     content: "";
     display: block;
@@ -734,3 +738,4 @@ label, span {
     }
     
 }
+

@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="scripts/prefixfree.min.js"></script>
 </head>
 
 <body>
@@ -32,7 +31,7 @@
         <nav id="navbar">
 
             <ul class="nav">
-                <li><a href="index.html">inicio</a>
+                <li><a class="selected" href="index.html">inicio</a>
                             <ul class="nav2">
                                 <li><a href="#bio">biografía</a>
                                     <ul>
@@ -74,19 +73,17 @@
                 <h2 id="bio">biografía</h2>
     
         </section>
-    
-        <div class="neon-container">
 
-            <picture>
-                <source srcset="/img/rosalia-latin-grammys-2023_chico.webp" media="(max-width: 480px)">
-                <source srcset="/img/rosalia-latin-grammys-2023_mediano.webp" media="(max-width: 800px)">
-                <img src="/img/rosalia-latin-grammys-2023.webp" alt="imagen de Rosalia en los Latin Grammys en el año 2023">
-            </picture>
+            <figure class="neon-container">
+                <picture>
+                    <source srcset="/img/rosalia-latin-grammys-2023_chico.webp" media="(max-width: 480px)">
+                    <source srcset="/img/rosalia-latin-grammys-2023_mediano.webp" media="(max-width: 800px)">
+                    <img src="/img/rosalia-latin-grammys-2023.webp" alt="imagen de Rosalia en los Latin Grammys en el año 2023">
+                </picture>
 
-            <figcaption>Rosalia en los Latin Grammys 2023.</figcaption>
+                <figcaption>Rosalia en los Latin Grammys 2023.</figcaption>
 
-        </div>
-    
+            </figure>    
     
         <section>
     
@@ -125,17 +122,17 @@
     
         </section>
 
-        <div class="neon-container">
+        <figure class="neon-container">
 
             <picture>
                 <source srcset="/img/rosalia-act_chico.webp" media="(max-width: 480px)">
                 <source srcset="/img/rosalia-act.webp" media="(max-width: 800px)">
                 <img src="/img/rosalia-act.webp" alt="Imagen de Rosalía durante su actuación en el festival Lollapalooza en Brasil">
             </picture>
-
+            
             <figcaption>Rosalía durante su actuación en el festival Lollapalooza, celebrado en São Paulo (Brasil).</figcaption>
 
-        </div>
+        </figure>
     
         <section>
     
@@ -201,7 +198,6 @@
 
     </div>
 
-    <script src="script.js"></script>
     <script src="jquery.min.js"></script>
 </body>
 
