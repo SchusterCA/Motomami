@@ -1,3 +1,5 @@
+/* Estilos generales */
+
 main, nav, header, footer {
     display: block;
 }
@@ -50,9 +52,7 @@ ul, ol {
     font-size: 2rem;
 }
 
-.selected {
-    color: rgb(224, 61, 61) !important;
-}
+
 
 :target::before {
     content: "";
@@ -117,7 +117,48 @@ ul, ol {
     display: block;
 }
 
-/*Main*/
+.selected {
+    color: rgb(224, 61, 61) !important;
+}
+
+/* Main */
+
+#galeria 
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: space-between;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+
+#fotos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#fotos li {
+    display: flex;
+    flex: 1 1 calc(25% - 20px);
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#fotos img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 h1, h2, h3, h4, h5 {
     color: aliceblue;
@@ -192,53 +233,7 @@ p strong {
     text-align: center;
 }
 
-.neon-container picture {
-    display: inline-block;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
-    animation: neon 1.5s infinite alternate;
-    border-radius: 10px;
-}
-
-.neon-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-}
-
-@keyframes neon {
-    from {
-        box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000,
-            0 0 40px #ff0000;
-    }
-    to {
-        box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000,
-            0 0 50px #ff0000;
-    }
-}
-
-@keyframes neon {
-    from {
-        box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000,
-            0 0 40px #ff0000;
-    }
-    to {
-        box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000,
-            0 0 50px #ff0000;
-    }
-}
-
-
-.neon-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-    text-align: center;
-}
-
-.neon-container picture {
-    display: inline-block;
+.neon-container picture, #fotos {
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
     animation: neon 1.5s infinite alternate;
     border-radius: 10px;
@@ -321,9 +316,7 @@ figcaption {
     list-style: lower-roman;
 }
 
-
-/* Formulaio */
-
+/* Formulario */
 
 #form-container {
     font-family: "Barlow Condensed", sans-serif;
@@ -333,18 +326,19 @@ figcaption {
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     width: 30rem;
     box-sizing: border-box;
-    margin: auto;text-align: center;
-  }
+    margin: auto;
+    text-align: center;
+}
 
-  .form-group {
+.form-group {
     margin-bottom: 1rem;
-  }
-  
-  .form-group span {
+}
+
+.form-group span {
     display: block;
     margin-bottom: 1rem;
-  }
-  
+}
+
 .form-group input[type="text"],
 .form-group input[type="tel"],
 .form-group input[type="email"],
@@ -359,7 +353,7 @@ figcaption {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 0.3rem;
     color: grey;
-  }
+}
 
 .form-group select,
 .form-group option {
@@ -368,43 +362,41 @@ figcaption {
     margin-bottom: 0.5rem;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 0.3rem;
-  }
-
+}
 
 .form-group input[type="file"] {
     border: none;
     color: aliceblue;
     font-size: 1rem;
-  }
+}
 
-  
 .form-group input[type="submit"] {
     background-color: transparent;
     color: aliceblue;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
+}
+
 .form-group input[type="submit"]:hover {
     background-color: #2c0909;
     color: gold;
-  }
-  
+}
+
 .form-group input[type="checkbox"] {
     margin-right: 0.5rem;
-  }
-  
+}
+
 label, span {
     color: #fff;
     font-size: 1.2rem;
-  }
-  
+}
+
 #button {
     display: block;
     width: 100%;
-  }
+}
 
-/** FOOTER **/
+/* Footer */
 
 .footer {
     display: flex;
@@ -487,9 +479,7 @@ label, span {
     background-image: url("/img/telegrama.webp");
 }
 
-
-/*mediaquerys para resoluciones*/
-
+/* Media Queries */
 
 @media screen and (max-width: 800px) {
 
@@ -513,7 +503,6 @@ label, span {
     }
 
     #logo-header, #logo-link {
-     
         background-image: url(/img/logo-header_mediano.webp);
         background-repeat: no-repeat;
         background-position: center;
@@ -535,11 +524,9 @@ label, span {
 
     .derechos {
         margin: 3rem;
-      }
-
+    }
 
     .neon-container {
-
         width: 800px;
     }
     
@@ -550,13 +537,11 @@ label, span {
     .footer-left {
         margin-right: 50px;
     }
-
 }
 
 @media screen and (max-width:480px) {
 
     #logo-header, #logo-link {
-     
         background-image: url(/img/logo-header_chico.webp);
         background-repeat: no-repeat;
         background-position: center;
@@ -585,14 +570,14 @@ label, span {
         font-size: 1.2rem;
     }
 
-    body{
-        background:none;
-        margin:0;
+    body {
+        background: none;
+        margin: 0;
     }
     
-    .principal{
-        width:480px;
-        margin:auto;
+    .principal {
+        width: 480px;
+        margin: auto;
         background: rgb(127, 0, 18);
         background: linear-gradient(
             0deg,
@@ -610,7 +595,6 @@ label, span {
         min-width: 8rem;
     }
     
-
     .hero {
         background-image: url("../img/banner_chico.webp");
         background-size: cover;
@@ -623,10 +607,7 @@ label, span {
         display: none;
     }
 
-    
-
     .neon-container {
-
         width: 480px;
     }
 
@@ -635,27 +616,26 @@ label, span {
         border-radius: 0.625rem;
         box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
         width: 20rem;
-      }
+    }
 
-      .form-group input[type="text"],
-      .form-group input[type="tel"],
-      .form-group input[type="email"],
-      .form-group input[type="date"],
-      .form-group input[type="file"],
-      .form-group input[type="submit"],
-      .form-group select,
-      .form-group option {
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="email"],
+    .form-group input[type="date"],
+    .form-group input[type="file"],
+    .form-group input[type="submit"],
+    .form-group select,
+    .form-group option {
         width: 15rem; 
-      }
+    }
 
-      label, span {
+    label, span {
         font-size: 1rem;
-      }
+    }
 
-
-      .derechos {
+    .derechos {
         margin: 3rem;
-      }
+    }
 
     .footer {
         display: flex;
@@ -736,6 +716,7 @@ label, span {
     .TelegramF {
         background-image: url("/img/telegram.webp");
     }
-    
+    #galeria{
+        display: none;
+    }
 }
-
